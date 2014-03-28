@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAcess", "DataAcess", "{4ABA75D6-D686-4555-A45D-A3773455B7FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dev.DBUtility", "Framework\DataAcess\dev.DBUtility\Dev.DBUtility.csproj", "{C88B43F2-3E15-4230-B084-19480FDF38F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dev.DBUtility.Params", "Framework\DataAcess\Dev.DBUtility.Params\Dev.DBUtility.Params.csproj", "{42D64427-439A-4F3E-B8D9-D615D419ED7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dev.DBUtility.Test", "Framework\DataAcess\dev.DBUtility.Test\Dev.DBUtility.Test.csproj", "{2EBBB8A5-1C05-4416-AFCB-90D97A2D5B50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pager", "Pager", "{807DB2D4-4F8E-44B4-B6D1-22DB635F019F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dev.Pager", "Framework\Pager\Dev.Pager\Dev.Pager.csproj", "{FC082169-138A-4228-9683-B92BE7CD8B62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dev.Pager.Control", "Framework\Pager\Dev.Pager.Control\Dev.Pager.Control.csproj", "{062A6DA2-A2C6-4EA9-8B99-B6382B89A279}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dev.Pager.Test", "Framework\Pager\Dev.Pager.Test\Dev.Pager.Test.csproj", "{B8D73A18-4867-4F51-8A0B-949FD769D6C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F56F9B90-BBAB-4FD5-957E-6421001C545C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\nugetDebug.bat = .nuget\nugetDebug.bat
+		.nuget\nugetRelease.bat = .nuget\nugetRelease.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C88B43F2-3E15-4230-B084-19480FDF38F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C88B43F2-3E15-4230-B084-19480FDF38F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C88B43F2-3E15-4230-B084-19480FDF38F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C88B43F2-3E15-4230-B084-19480FDF38F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42D64427-439A-4F3E-B8D9-D615D419ED7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D64427-439A-4F3E-B8D9-D615D419ED7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D64427-439A-4F3E-B8D9-D615D419ED7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D64427-439A-4F3E-B8D9-D615D419ED7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EBBB8A5-1C05-4416-AFCB-90D97A2D5B50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EBBB8A5-1C05-4416-AFCB-90D97A2D5B50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EBBB8A5-1C05-4416-AFCB-90D97A2D5B50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EBBB8A5-1C05-4416-AFCB-90D97A2D5B50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC082169-138A-4228-9683-B92BE7CD8B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC082169-138A-4228-9683-B92BE7CD8B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC082169-138A-4228-9683-B92BE7CD8B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC082169-138A-4228-9683-B92BE7CD8B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{062A6DA2-A2C6-4EA9-8B99-B6382B89A279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062A6DA2-A2C6-4EA9-8B99-B6382B89A279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062A6DA2-A2C6-4EA9-8B99-B6382B89A279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062A6DA2-A2C6-4EA9-8B99-B6382B89A279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8D73A18-4867-4F51-8A0B-949FD769D6C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D73A18-4867-4F51-8A0B-949FD769D6C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D73A18-4867-4F51-8A0B-949FD769D6C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D73A18-4867-4F51-8A0B-949FD769D6C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C88B43F2-3E15-4230-B084-19480FDF38F1} = {4ABA75D6-D686-4555-A45D-A3773455B7FC}
+		{42D64427-439A-4F3E-B8D9-D615D419ED7B} = {4ABA75D6-D686-4555-A45D-A3773455B7FC}
+		{2EBBB8A5-1C05-4416-AFCB-90D97A2D5B50} = {4ABA75D6-D686-4555-A45D-A3773455B7FC}
+		{FC082169-138A-4228-9683-B92BE7CD8B62} = {807DB2D4-4F8E-44B4-B6D1-22DB635F019F}
+		{062A6DA2-A2C6-4EA9-8B99-B6382B89A279} = {807DB2D4-4F8E-44B4-B6D1-22DB635F019F}
+		{B8D73A18-4867-4F51-8A0B-949FD769D6C2} = {807DB2D4-4F8E-44B4-B6D1-22DB635F019F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dev.Log.Impl</name>
+    </assembly>
+    <members>
+        <member name="T:Dev.Log.Impl.ObserverLogToConsole">
+            <summary>
+            Writes log events to the diagnostic trace.
+            </summary>
+            <remarks>
+            GoF Design Pattern: Observer.
+            The Observer Design Pattern allows this class to attach itself to an
+            the logger and 'listen' to certain events and be notified of the event. 
+            </remarks>
+        </member>
+        <member name="M:Dev.Log.Impl.ObserverLogToConsole.Log(System.Object,Dev.Log.LogEventArgs)">
+            <summary>
+            Writes a log request to the diagnostic trace on the page.
+            </summary>
+            <param name="sender">Sender of the log request.</param>
+            <param name="e">Parameters of the log request.</param>
+        </member>
+        <member name="P:Dev.Log.Impl.ObserverLogToConsole.Prex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Dev.Log.Impl.ObserverLogToDatabase">
+            <summary>
+            Writes log events to a database.
+            </summary>
+            <remarks>
+            GoF Design Pattern: Observer.
+            The Observer Design Pattern allows this class to attach itself to an
+            the logger and 'listen' to certain events and be notified of the event. 
+            </remarks>
+        </member>
+        <member name="M:Dev.Log.Impl.ObserverLogToDatabase.Log(System.Object,Dev.Log.LogEventArgs)">
+            <summary>
+            Writes a log request to the database.
+            </summary>
+            <remarks>
+            Actual database insert statements are commented out.
+            You can activate this if you have the proper database 
+            configuration and access privileges.
+            </remarks>
+            <param name="sender">Sender of the log request.</param>
+            <param name="e">Parameters of the log request.</param>
+        </member>
+        <member name="T:Dev.Log.Impl.ObserverLogToEmail">
+            <summary>
+            Sends log events via email.
+            </summary>
+            <remarks>
+            GoF Design Pattern: Observer.
+            The Observer Design Pattern allows this class to attach itself to an
+            the logger and 'listen' to certain events and be notified of the event. 
+            </remarks>
+        </member>
+        <member name="M:Dev.Log.Impl.ObserverLogToEmail.#ctor(System.String,System.String,System.String,System.String,System.Net.Mail.SmtpClient)">
+            <summary>
+            Constructor for the ObserverlogToEmail class
+            </summary>
+            <param name="from">From email address.</param>
+            <param name="to">To email address.</param>
+            <param name="subject">Email subject.</param>
+            <param name="smtpClient">Smtp email client.</param>
+        </member>
+        <member name="M:Dev.Log.Impl.ObserverLogToEmail.Log(System.Object,Dev.Log.LogEventArgs)">
+            <summary>
+            Sends a log request via email.
+            </summary>
+            <remarks>
+            Actual email 'Send' calls are commented out.
+            Uncomment if you have the proper email privileges.
+            </remarks>
+            <param name="sender">Sender of the log request.</param>
+            <param name="e">Parameters of the log request.</param>
+        </member>
+        <member name="T:Dev.Log.Impl.ObserverLogToEventlog">
+            <summary>
+            Writes log events to the Windows event log.
+            </summary>
+            <remarks>
+            GoF Design Pattern: Observer.
+            The Observer Design Pattern allows this class to attach itself to an
+            the logger and 'listen' to certain events and be notified of the event. 
+            </remarks>
+        </member>
+        <member name="M:Dev.Log.Impl.ObserverLogToEventlog.Log(System.Object,Dev.Log.LogEventArgs)">
+            <summary>
+            Write a log request to the event log.
+            </summary>
+            <remarks>
+            Actual event log write entry statements are commented out.
+            Uncomment if you have the proper privileges.
+            </remarks>
+            <param name="sender">Sender of the log request.</param>
+            <param name="e">Parameters of the log request.</param>
+        </member>
+        <member name="T:Dev.Log.Impl.ObserverLogToFile">
+            <summary>
+            Writes log events to a local file.
+            </summary>
+            <remarks>
+            GoF Design Pattern: Observer.
+            The Observer Design Pattern allows this class to attach itself to an
+            the logger and 'listen' to certain events and be notified of the event. 
+            </remarks>
+        </member>
+        <member name="M:Dev.Log.Impl.ObserverLogToFile.#ctor(System.String)">
+            <summary>
+            Constructor of ObserverLogToFile.
+            </summary>
+            <param name="fileName">File log to.</param>
+        </member>
+        <member name="M:Dev.Log.Impl.ObserverLogToFile.Log(System.Object,Dev.Log.LogEventArgs)">
+            <summary>
+            Write a log request to a file.
+            </summary>
+            <param name="sender">Sender of the log request.</param>
+            <param name="e">Parameters of the log request.</param>
+        </member>
+        <member name="T:Dev.Log.Impl.ObserverLogToLog4net">
+            <summary>
+            使用Log4NET
+            </summary>
+        </member>
+        <member name="M:Dev.Log.Impl.ObserverLogToLog4net.#ctor">
+            <summary>
+            默认使用 "log4net.config"
+            </summary>
+        </member>
+        <member name="M:Dev.Log.Impl.ObserverLogToLog4net.#ctor(System.String)">
+            <summary>
+            指定配置文件
+            </summary>
+            <param name="log4NetConfig"></param>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+    </members>
+</doc>
